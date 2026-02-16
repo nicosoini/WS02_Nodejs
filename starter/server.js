@@ -4,7 +4,6 @@ const path = require("path");
 
 const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = path.join(__dirname, "public");
-const host = "localhost";
 
 const MIME_TYPES = {
   ".html": "text/html",
@@ -95,7 +94,7 @@ function handleServerError(res, error) {
 }
 
 server.listen(PORT, host, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on ${PORT}`);
   console.log("Avaible routes:");
   console.log(" GET /           -> index.html");
   console.log(" GET /about      -> about.html");
