@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const PORT = process.env.PORT || 3000;
+const host = "0.0.0.0";
 const PUBLIC_DIR = path.join(__dirname, "public");
 
 const MIME_TYPES = {
@@ -93,7 +94,7 @@ function handleServerError(res, error) {
   });
 }
 
-server.listen(PORT, host, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on ${PORT}`);
   console.log("Avaible routes:");
   console.log(" GET /           -> index.html");
