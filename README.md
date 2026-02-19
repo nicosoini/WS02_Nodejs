@@ -1,14 +1,12 @@
 # Workshop 02 – Building a Node.js HTTP Server
 
 ## Overview
-In this workshop, you will learn the fundamentals of **Node.js HTTP server** and **routing** by building a simple web server from scratch without using any frameworks.
-
-This workshop focuses on **practical understanding** of how web servers work at a fundamental level.
+In this workshop, I learned about the fundamentals of **Node.js HTTP server** and **routing** by building a simple web server from scratch without using any frameworks.
 
 ---
 
 ## Learning Objectives
-By the end of this workshop, you should be able to:
+After this workshop, I am now able to:
 - Create an HTTP server using Node.js built-in `http` module
 - Implement routing to serve different HTML pages
 - Serve static files (HTML, CSS) with correct MIME types
@@ -24,31 +22,17 @@ By the end of this workshop, you should be able to:
 - HTTP status codes and headers
 - MIME types for different file extensions
 - Basic routing and error handling
-- (Bonus) Creating JSON API endpoints
-
----
-
-## Prerequisites
-Before starting this workshop, make sure you have:
-- Basic knowledge of JavaScript
-- Understanding of HTML and CSS
-- Installed:
-  - Node.js (LTS version recommended)
-  - npm (comes with Node.js)
-  - Git
-  - A code editor (VS Code recommended)
 
 ---
 
 ## Project Description
-You will build:
+I build:
 > **A simple HTTP web server that serves multiple HTML pages, CSS files, and handles custom error pages**
 
-The server will:
-- Serve a homepage, about page, and contact page
-- Load CSS stylesheets for proper styling
-- Display custom 404 and 500 error pages
-- (Bonus) Provide a JSON API endpoint for current date/time
+The server:
+- Serves a homepage, about page, and contact page
+- Loades CSS stylesheets for proper styling
+- Displays custom 404 and 500 error pages
 
 ---
 
@@ -106,34 +90,31 @@ Workshop02_Nodejs/
 
 Complete the following tasks in order:
 
-### ✅ Task 1 – Start the Server
-- Implement `server.listen()` to start the server on port 3000
-- Log a message when the server starts
+### ✅ Task 1
+- I Implemented `server.listen()` to start the server on port 3000
+- I Logged a `console.log(`Server is running on http://localhost:${PORT}`);' message when the server starts
 
-### ✅ Task 2 – Add Routing
-- Map URL paths to HTML files:
+### ✅ Task 2
+- I made Map URL paths to HTML files:
   - `/` → `index.html`
   - `/about` → `about.html`
   - `/contact` → `contact.html`
 
-### ✅ Task 3 – Serve HTML Files
-- Read files using `fs.readFile()`
-- Send appropriate HTTP response with correct status codes and headers
+### ✅ Task 3
+- I Read files using `fs.readFile()`
+- I sent appropriate HTTP responses with correct status codes and headers
 
-### ✅ Task 4 – Serve CSS Files
-- Handle requests for CSS files from `/styles/` folder
-- Implement path traversal security check
+### ✅ Task 4
+- I Handled requests for CSS files from `/styles/` folder
+- I Implemented a path traversal security check
 
-### ✅ Task 5 – Error Handling
-- Implement `handle404()` function for 404 errors
-- Implement `handleServerError()` function for 500 errors
-
-### 🌟 Task 6 (Bonus) – Create API Endpoint
-- Create `/api/time` endpoint that returns current date/time as JSON
+### ✅ Task 5
+- I Implement `handle404()` function for 404 errors
+- I Implement `handleServerError()` function for 500 errors
 
 ---
 
-## Running Your Server
+## Running My Server
 
 1. Make sure you're in the `starter` directory
 2. Run the server:
@@ -148,19 +129,6 @@ Complete the following tasks in order:
    - `http://localhost:3000/api/time` - Test API endpoint (bonus)
 
 4. Stop the server: Press `Ctrl + C` in the terminal
-
----
-
-## Testing Your Implementation
-
-### Manual Testing Checklist
-- [ ] Server starts without errors
-- [ ] Home page loads at `http://localhost:3000`
-- [ ] About page loads at `/about`
-- [ ] Contact page loads at `/contact`
-- [ ] CSS styles are applied correctly
-- [ ] Custom 404 page appears for invalid URLs
-- [ ] (Bonus) `/api/time` returns JSON with current time
 
 ---
 
@@ -193,39 +161,3 @@ Complete the following tasks in order:
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 
----
-
-## Submission
-
-After completing all tasks:
-1. Test your server thoroughly
-2. Commit your changes:
-   ```bash
-   git add .
-   git commit -m "Complete Workshop 02 - HTTP Server"
-   git push origin main
-   ```
-3. Verify your repository on GitHub
-
----
-
-## Need Help?
-
-- Review the comments in `server.js` for detailed hints
-- Check the `Solution` folder for reference (try to solve it yourself first!)
-- Refer to `requirement.md` for detailed task specifications
-- Ask your instructor or teaching assistant
-
----
-
-## Next Steps
-
-After completing this workshop, you'll be ready to:
-- Learn about Express.js framework (which simplifies routing)
-- Explore middleware concepts
-- Build REST APIs
-- Add database integration
-
----
-
-**Good luck and happy coding! 🚀**
