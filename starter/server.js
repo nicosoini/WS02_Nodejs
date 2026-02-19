@@ -95,7 +95,7 @@ function handleServerError(res, error) {
 }
 
 server.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server is running on ${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
   console.log("Avaible routes:");
   console.log(" GET /           -> index.html");
   console.log(" GET /about      -> about.html");
